@@ -193,6 +193,13 @@ function tablaMultiplicar(numero) {
 function numerosPares(n) {
   // TODO: Crea un array con todos los nÃºmeros pares hasta n
   const pares = [];
+
+  for (let i = 2; i <= n; i++) {
+    if (i % 2 === 0) { // si el número es divisible entre 2
+      pares.push(i);   // lo agregamos al array
+    }
+  }
+
   return pares;
 }
 
